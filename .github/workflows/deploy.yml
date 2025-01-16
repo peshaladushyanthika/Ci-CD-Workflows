@@ -1,6 +1,8 @@
 name: hello world
 on:
   push:
+    paths:
+      - index.html
     branches:
       - main
 jobs:
@@ -9,5 +11,10 @@ jobs:
     steps:
     - name: print hello world
       run: echo "hello, world"
+  notify:
+     runs-on: ubuntu-latest
+     steps:
+      - name: notify change
+        run: echo"index.html updated"
     
     
