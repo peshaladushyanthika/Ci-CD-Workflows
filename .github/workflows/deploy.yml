@@ -15,6 +15,6 @@ jobs:
      runs-on: ubuntu-latest
      steps:
       - name: notify change
-        run: echo "index.html updated"
+        run: echo "index.html file is updated"
     
     
